@@ -1,0 +1,150 @@
+/* this is a general formatting */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: Helvetica, Sans-serif, Arial;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr{
+    margin-bottom: 50px;
+}
+
+.container{
+    clear: both;
+    padding: 20px 30px;
+}
+
+
+/* this is the image styling */
+
+.pass{
+    justify-content: center;
+    text-align: center;
+}
+
+img{
+    border-radius: 100%;
+    width: 200px;
+    text-align: center !important;
+    align-items: center;
+    justify-content: center;
+}
+
+/* this is the header styling */
+
+.header{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;  
+   background-color: aqua;
+   padding: 10px;
+}
+
+.header h1, h4{
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+
+.header-tel a, h5, .header-email a, h5{
+    padding: 5px;
+}
+
+
+/* this is the personal details styling */
+
+.personal-details-main{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.personal-details-left p{
+    text-transform: capitalize;
+}
+
+.personal-details-right p{
+    margin-right: 50px;
+    text-transform: capitalize;
+}
+
+
+/* i gave a general formatting to all the headers */
+
+.personal-details-heading, .objective-heading, .experience, .qualification-heading, .skills, .language, .interest, .ref{
+    margin-top: 40px;
+
+}
+
+
+/* this is objective styling */
+.objective-one{
+    padding: 10px;
+}
+
+
+/* this is the styling for experience/history */
+
+.history-heading{
+    padding: 20px;
+}
+
+/* this is the qualification styling */
+
+.qualification-main{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.qualification-main-right p{
+    margin-right: 50px;
+}
+
+/* this is the skills styling */
+/* and also for language spoken */
+
+.skills-list, .spoken-list{
+    padding:10px ;
+}
+
+
+@media(max-width: 768px){
+    .personal-details-main{
+        justify-content: space-between;
+    }
+
+    .personal-details-right p {
+        margin-right: 0;
+        text-transform: capitalize;
+    }
+
+    .qualification-main-right p {
+        margin-right: 0;
+        justify-content: flex-end;
+    }
+
+    body{
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    p{
+        line-height: 1.5;   
+    }
+
+    li{
+        margin: 10px 0;
+    }
+
+}
